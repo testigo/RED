@@ -1,0 +1,68 @@
+<?= $this->doctype() ?>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?= $this->headTitle($this->systemTitle)
+            ->setSeparator(' | ')
+            ->setAutoEscape(false) ?>
+        <?= $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge') ?>
+        <?= $this->headLink([
+                'rel' => 'shortcut icon',
+                'type' => 'image/vnd.microsoft.icon',
+                'href' => $this->basePath() . '/assets/back/img/redone-icon.ico']
+            )
+            ->prependStylesheet($this->basePath() . '/assets/back/css/bootstrap.min.css')
+            ->prependStylesheet($this->basePath() . '/assets/back/font-awesome/css/font-awesome.css')
+            ->prependStylesheet($this->basePath() . '/assets/back/css/plugins/morris/morris-0.4.3.min.css')
+            ->prependStylesheet($this->basePath() . '/assets/back/css/plugins/timeline/timeline.css')
+            ->prependStylesheet($this->basePath() . '/assets/back/css/bootstrap3-wysiwyg5/bootstrap3-wysiwyg5.css')
+            ->prependStylesheet($this->basePath() .
+                    '/assets/back/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css')
+            ->prependStylesheet($this->basePath() . '/assets/back/css/bootstrap-switch/bootstrap-switch.css')
+            ->prependStylesheet($this->basePath() . '/assets/back/css/default.css') ?>
+        <script src="/assets/back/js/jquery-2.1.1.min.js"></script>
+        <script src="/assets/back/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript">
+            translate = {
+                yes: '<?= $this->translate('Yes') ?>',
+                no: '<?= $this->translate('No') ?>'
+            }
+        </script>
+    </head>
+    <body>
+        <hr>
+        <div class="container">
+            <?= $this->content ?>
+        </div>
+        <hr>
+        <div class="container">
+            <span class="help-block">
+                © <?= date('Y') ?>
+                <a target="_blank" href="/">Red</a>.
+                <?= $this->translate('All rights reserved.') ?>
+            </span>
+        </div>
+        <?= $this->headScript()
+            ->appendFile($this->basePath() . '/assets/back/js/bootstrap.min.js')
+            ->appendFile($this->basePath() . '/assets/back/js/default.js') ?>
+
+        <!--        <script src="/assets/back/ckeditor/ckeditor.js"></script>-->
+
+        <!-- Page-Level Plugin Scripts - Dashboard -->
+<!--        <script src="/assets/back/js/plugins/morris/raphael-2.1.0.min.js"></script>-->
+<!--        <script src="/assets/back/js/plugins/morris/morris.js"></script>-->
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="/assets/back/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="/assets/back/js/ie-emulation-modes-warning.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </body>
+</html>

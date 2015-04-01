@@ -1,0 +1,32 @@
+<? $this->headTitle($this->translate('Home')) ?>
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <legend>
+                <span class="glyphicon glyphicon-off"></span>
+                <a href="<?= $this->url('back') ?>">
+                    <?= $this->translate('Dashboard') ?>
+                </a>
+            </legend>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <legend>
+                <span class="glyphicon glyphicon-th-list"></span>
+                <?= $this->translate('Info') ?>
+            </legend>
+            <div>
+                <h2>
+                    <?= $this->translate('RED APPLICATION') ?>
+                </h2>
+                <div>
+                    Ukraine,
+                    <?= $this->translate('Kiev') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

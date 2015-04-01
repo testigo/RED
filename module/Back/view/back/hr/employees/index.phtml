@@ -1,0 +1,279 @@
+<? $this->headTitle(
+    $this->translate('Employees') . ' | ' . 
+    $this->translate('HR')) ?>
+
+<div id="page-wrapper">
+    <div class="row">
+        <legend>
+            <span class="glyphicon glyphicon-user"></span>
+            <a href="<?= $this->url('backHR') ?>">
+                <?= $this->translate('HR') ?>
+            </a>
+            /
+            <a href="<?= $this->url($this->url) ?>">
+                <?= $this->translate('Employees') ?>
+            </a>
+        </legend>
+    </div>
+    <div class="row">
+        <form class="form-inline">
+            <div class="form-group">
+                <a class="btn btn-default form-inline" href="<?= $this->url('backHR') ?>">
+                    <?= $this->translate('Back') ?>
+                </a>
+                <a class="btn btn-success form-inline" href="<?= $this->url(
+                        $this->url,
+                        [
+                            'action' => 'add',
+                        ]) ?>">
+                    <?= $this->translate('Add') ?>
+                </a>
+            </div>
+            <div class="form-group">
+                <input value="<? if (isset($_GET['s'])) echo $_GET['s'] ?>" name="s" type="text" placeholder="<?= $this->translate('Search') ?> ..." class="form-control">
+                <input id="search" type="submit" class="btn btn-default" value="<?= $this->translate('Search') ?>" >
+                <? if (isset($_GET['s'])) : ?>
+                    <a class="btn btn-danger" href="<?= $this->url($this->url) ?>">
+                        <?= $this->translate('Reject') ?>
+                    </a>
+                <? endif ?>
+            </div>
+            <div class="form-group pull-right">
+                <label>
+                    <?= $this->translate('Filters') ?>:
+                </label>
+                <input type="checkbox" name="my-checkbox" id="my-checkbox" class="enable-filters">
+
+                <label>
+                    <?= $this->translate('ICPP') ?>:
+                </label>
+                <select id="icpp" class="form-control">
+                    <? foreach ($this->itemsCountPerPage as $key => $item) : ?>
+                        <option <? if ($this->itemsPerPage == $key) echo 'selected' ?> value="<?= $item ?>">
+                            <?= $item ?>
+                        </option>
+                    <? endforeach ?>
+                </select>
+            </div>
+        </form>      
+    </div>
+    <form id="form-table" method="post">
+        <div class="row" id="filter-settings">
+            <br>
+            <div class="form-inline">
+                <div class="form-group pull-left">
+                    <input type="submit" class="btn btn-success btn-sm" value="<?= $this->translate('Process filters') ?>">
+                    <a href="<?= $this->url($this->url) ?>" class="btn btn-danger btn-sm">
+                        <?= $this->translate('Disable') ?>
+                    </a>
+                </div>
+                <div class="form-group pull-right">
+                    <label>
+                        <button id="search" type="button" class="btn btn-default btn-sm">
+                            <?= $this->translate('Records') ?>:
+                            <?= $this->count ?>
+                        </button>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">            
+            <table class="table table-bordered table-striped table-hover" id="lib-table">
+                <tr>
+                    <th class="col-md-1">
+                        <a href="<?= $this->url(
+                                $this->url,
+                                [
+                                    'order_by' => 'id',
+                                    'order' => $this->filter->url_order,
+                                ]) ?>">
+                            id
+                            <? if ($this->filter->order_by == 'id'): ?>
+                                <span class="glyphicon glyphicon-arrow-<?= $this->filter->url_order == 'ASC' ? 'down' : 'up' ?>"></span>
+                            <? endif ?>
+                        </a>
+                    </th>
+                    <th class="col-md-2">
+                        <a href="<?= $this->url(
+                                $this->url,
+                                [
+                                    'order_by' => 'first_name',
+                                    'order' => $this->filter->url_order,
+                                ]) ?>">
+                            <?= $this->translate('First name')?>
+                            <? if ($this->filter->order_by == 'first_name'): ?>
+                                <span class="glyphicon glyphicon-arrow-<?= $this->filter->url_order == 'ASC' ? 'down' : 'up' ?>"></span>
+                            <? endif ?>
+                        </a>
+                    </th>
+                    <th class="col-md-2">
+                        <a href="<?= $this->url(
+                                $this->url,
+                                [
+                                    'order_by' => 'last_name',
+                                    'order' => $this->filter->url_order,
+                                ]) ?>">
+                            <?= $this->translate('Last name') ?>
+                            <? if ($this->filter->order_by == 'last_name'): ?>
+                                <span class="glyphicon glyphicon-arrow-<?= $this->filter->url_order == 'ASC' ? 'down' : 'up' ?>"></span>
+                            <? endif ?>
+                        </a>
+                    </th>
+                    <th class="col-md-2">
+                        <a href="<?= $this->url(
+                                $this->url,
+                                [
+                                    'order_by' => 'phone_number',
+                                    'order' => $this->filter->url_order,
+                                ]) ?>">
+                            <?= $this->translate('Phone number') ?>
+                            <? if ($this->filter->order_by == 'phone_number'): ?>
+                                <span class="glyphicon glyphicon-arrow-<?= $this->filter->url_order == 'ASC' ? 'down' : 'up' ?>"></span>
+                            <? endif ?>
+                        </a>
+                    </th>
+                    <th class="col-md-2">
+                        <a href="<?= $this->url(
+                                $this->url,
+                                [
+                                    'order_by' => 'city',
+                                    'order' => $this->filter->url_order,
+                                ]) ?>">
+                            <?= $this->translate('City') ?>
+                            <? if ($this->filter->order_by == 'city'): ?>
+                                <span class="glyphicon glyphicon-arrow-<?= $this->filter->url_order == 'ASC' ? 'down' : 'up' ?>"></span>
+                            <? endif ?>
+                        </a>
+                    </th>
+                    <th class="col-md-2">
+                        <a href="<?= $this->url(
+                                $this->url,
+                                [
+                                    'order_by' => 'address',
+                                    'order' => $this->filter->url_order,
+                                ]) ?>">
+                            <?= $this->translate('Address') ?>
+                            <? if ($this->filter->order_by == 'address'): ?>
+                                <span class="glyphicon glyphicon-arrow-<?= $this->filter->url_order == 'ASC' ? 'down' : 'up' ?>"></span>
+                            <? endif ?>
+                        </a>
+                    </th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr class="filters">
+                    <td>
+                        <input name="id" class="form-control input-md" type="text" value="<?= $this->_filter->id ?>">
+                    </td>
+                    <td>
+                        <input name="first_name" class="form-control input-md" type="text" value="<?= $this->_filter->first_name ?>" />
+                    </td>
+                    <td>
+                        <input name="last_name" class="form-control input-md" type="text" value="<?= $this->_filter->last_name ?>" />
+                    </td>
+                    <td>
+                        <input name="phone_number" class="form-control input-md" type="text" value="<?= $this->_filter->phone_number ?>" />
+                    </td>
+                    <td>
+                        <input name="city" class="form-control input-md" type="text" value="<?= $this->_filter->city ?>" />
+                    </td>
+                    <td>
+                        <input name="address" class="form-control input-md" type="text" value="<?= $this->_filter->address ?>" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <? if (!$this->count) : ?>
+                    <tr>
+                        <td colspan="100%">
+                            <strong>
+                                <?= $this->translate('No records') ?>
+                            </strong>
+                        </td>
+                    </tr>
+                <? endif ?>
+                <? foreach ($this->pagination as $item) : ?>
+                    <tr>
+                        <td class="managers-item-id">
+                            <?= $item->id ?>
+                        </td>
+                        <td>
+                            <?= $item->first_name ?>    
+                        </td>
+                        <td>
+                            <?= $item->last_name ?>
+                        </td>
+                        <td>
+                            <?= $item->phone_number ?>
+                        </td>
+                        <td>
+                            <?= $item->city ?>
+                        </td>
+                        <td>
+                            <?= $item->address ?>
+                        </td>
+                        <td>
+                            <a href="<?= $this->url(
+                                    $this->url,
+                                    [
+                                        'action' => 'view',
+                                        'id' => $item->id,
+                                    ]) ?>">
+                                <?= $this->translate('View') ?>
+                            </a>
+                            <br>
+                            <a href="<?= $this->url(
+                                    $this->url,
+                                    [
+                                        'action' => 'edit',
+                                        'id' => $item->id,
+                                    ]) ?>">
+                                <?= $this->translate('Edit') ?>
+                            </a>
+                            <br>
+                            <a href="<?= $this->url(
+                                    $this->url,
+                                    [
+                                        'action' => 'delete',
+                                        'id' => $item->id,
+                                    ]) ?>">
+                                <?= $this->translate('Delete') ?>
+                            </a>
+                        </td>
+                    </tr>
+                <? endforeach ?>
+            </table>
+            <div class="form-inline">
+                <div class="form-group">
+                    <?= $this->paginationControl(
+                        $this->pagination,
+                        'Sliding',
+                        'pagination\hr\employees',
+                        [
+                            'order_by' => $this->filter->order_by,
+                            'order' => $this->filter->order,
+                        ]) ?>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function() {
+        $('.table .filters').toggle();
+        var settingsBlock = $('#filter-settings');
+        settingsBlock.toggle();
+        if ($('.filters').is(':hidden'))
+            settingsBlock.hide();
+    });
+
+    if (!<?= (int) $this->filter->visible ?>) {
+        $('.filters').hide();
+        $('#filter-settings').hide();
+    } else
+        $('input[name="my-checkbox"]').attr('checked', 'checked');
+    
+    $('#icpp').change(function() {
+        window.location.href = '/back/hr/employees/icpp/' + this.value;
+    });
+</script>

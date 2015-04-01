@@ -1,0 +1,27 @@
+<? $this->headTitle($this->translate('Home')) ?>
+
+<div class="container">
+    <div class="row">
+        <legend>
+            <?= $this->translate('Home') ?>
+        </legend>
+    </div>
+    <div class="row">
+    	<p>Hi, my name is RED application!</p>
+    	<br>
+    	<p>
+    		Pleace sign in using:
+    		<ul>
+    			<li>
+    				Email: some.love@email.com
+    			</li>
+    			<li>
+    				Password: some_22_love_1^pas
+    			</li>
+    		</ul>
+    		<a href="<?= $this->url('backAuth') ?>">
+                <?= $this->translate('SIGN IN!') ?>
+            </a>
+    	</p>
+    </div>
+</div>

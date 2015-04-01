@@ -1,0 +1,1569 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-05 22:17-0700\n"
+"PO-Revision-Date: 2015-02-28 23:33+0200\n"
+"Last-Translator: vragovR <vragovR@yandex.ru>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.6.8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/layout/layout.phtml:6 ../view/layout/layout.phtml:33
+msgid "Skeleton Application"
+msgstr "Skeleton Application"
+
+#: ../view/layout/layout.phtml:36
+msgid "Home"
+msgstr "Главная"
+
+#: ../view/layout/layout.phtml:50
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+#: ../view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to %sZend Framework 2%s"
+msgstr "Привет, %sZend Framework 2%s"
+
+#: ../view/application/index/index.phtml:3
+#, php-format
+msgid ""
+"Congratulations! You have successfully installed the %sZF2 Skeleton "
+"Application%s. You are currently running Zend Framework version %s. This "
+"skeleton can serve as a simple starting point for you to begin building your "
+"application on ZF2."
+msgstr ""
+"Поздравляем! Вы успешно установили %sZF2 Skeleton Application%s. У вас "
+"установлен Zend Framework версии %s. Этот каркас может служить простой "
+"отправной точкой, чтобы начать строить приложения на ZF2."
+
+#: ../view/application/index/index.phtml:4
+msgid "Fork Zend Framework 2 on GitHub"
+msgstr "Fork Zend Framework 2 на GitHub"
+
+#: ../view/application/index/index.phtml:10
+msgid "Follow Development"
+msgstr "Следи за Разработкой"
+
+#: ../view/application/index/index.phtml:11
+#, php-format
+msgid ""
+"Zend Framework 2 is under active development. If you are interested in "
+"following the development of ZF2, there is a special ZF2 portal on the "
+"official Zend Framework website which provides links to the ZF2 %swiki%s, "
+"%sdev blog%s, %sissue tracker%s, and much more. This is a great resource for "
+"staying up to date with the latest developments!"
+msgstr ""
+"Zend Framework 2 активно развивается. Если вы заинтересованы в его развитии, "
+"для вас есть специальный портал ZF2 на официальном сайте Zend Framework "
+"который дает ссылки на ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, и "
+"многое другое. Это отличный ресурс для того чтобы быть в курсе последних "
+"событий."
+
+#: ../view/application/index/index.phtml:12
+msgid "ZF2 Development Portal"
+msgstr "ZF2 Портал Разработчика"
+
+#: ../view/application/index/index.phtml:16
+msgid "Discover Modules"
+msgstr "Узнай о Модулях"
+
+#: ../view/application/index/index.phtml:17
+#, php-format
+msgid ""
+"The community is working on developing a community site to serve as a "
+"repository and gallery for ZF2 modules. The project is available %son GitHub"
+"%s. The site is currently live and currently contains a list of some of the "
+"modules already available for ZF2."
+msgstr ""
+"Сообщество работает над созданием сайта, который служит хранилищем и "
+"галереей для ZF2 модулей. Проект доступен %sна GitHub%s. Сайт в настоящее "
+"время активен и содержит список модулей уже доступных для ZF2."
+
+#: ../view/application/index/index.phtml:18
+msgid "Explore ZF2 Modules"
+msgstr "Узнать о ZF2 модулях"
+
+#: ../view/application/index/index.phtml:22
+msgid "Help &amp; Support"
+msgstr "Помощь и Поддержка"
+
+#: ../view/application/index/index.phtml:23
+#, php-format
+msgid ""
+"If you need any help or support while developing with ZF2, you may reach us "
+"via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+"feedback you may have regarding the beta releases. Alternatively, you may "
+"subscribe and post questions to the %smailing lists%s."
+msgstr ""
+"Если вам нужна помощь или поддержка при разработке с ZF2, вы можете "
+"связаться с нами по IRC: %s#zftalk on Freenode%s. Мы хотели бы узнать какие "
+"вопросы или предложения вы имеете относительно текущей версии. Кроме того, "
+"вы можете задавать вопросы в %smailing lists%s."
+
+#: ../view/application/index/index.phtml:24
+msgid "Ping us on IRC"
+msgstr "Присоединяйся к IRC"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Произошла ошибка"
+
+#: ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr "Дополнительная информация"
+
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+msgid "File"
+msgstr "Файл"
+
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+#: ../view/error/404.phtml:55
+msgid "Stack trace"
+msgstr "Развертывание стека"
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Предыдущие исключения"
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Нет имеющихся исключений"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "Ошибка 404"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Запрашиваемый контроллер не смог отправить запрос."
+
+#: ../view/error/404.phtml:13
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+"Запрашиваемый контроллер не может быть сопоставлен с существующими классом "
+"контроллера."
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "Запрашиваемый контроллер не доступен."
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "Для запрашиваемого URL не может быть достигнуто направление."
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Мы не можем определить причину создания страницы 404."
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "Контроллер"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "разрешает для %s"
+
+msgid "Exception"
+msgstr "Исключение"
+
+msgid "Shoesman"
+msgstr "Чоботар"
+
+msgid "Service"
+msgstr "Услуги"
+
+msgid "Price list"
+msgstr "Прайс лист"
+
+msgid "Jobs"
+msgstr "Вакансии"
+
+msgid "About"
+msgstr "О нас"
+
+msgid "Log in"
+msgstr "Войти"
+
+msgid "Home page"
+msgstr "Главная"
+
+msgid "Welcome to %sRed Puzzle Community%s"
+msgstr "Добро пожаловать в %sRed Puzzle Community%s"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Created"
+msgstr "Создано"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Content"
+msgstr "Контент"
+
+msgid "Hide"
+msgstr "Спрятано"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Log out"
+msgstr "Выход"
+
+msgid "Admin"
+msgstr "Администрирование"
+
+msgid "Authentication"
+msgstr "Авторизация"
+
+msgid "Empty fields"
+msgstr "Пустые поля"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "You've been logged out"
+msgstr "Вы покинули систему"
+
+msgid "Administration"
+msgstr "Администрирование"
+
+msgid "Supplied credential is invalid."
+msgstr "Неправильные данные"
+
+msgid "Red Puzzle Community Platform"
+msgstr "Платформа Red Puzzle Community"
+
+msgid "Add news"
+msgstr "Добавление новости"
+
+msgid "Add new"
+msgstr "Добавить"
+
+msgid "Delete news"
+msgstr "Удаление новости"
+
+msgid "Are you sure that you want to delete the"
+msgstr "Вы уверенны что хотите удалить"
+
+msgid "Edit news"
+msgstr "Редактирование новости"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "A record with the supplied identity could not be found."
+msgstr "Отказано в доступе"
+
+msgid "Email"
+msgstr "Электронная почта"
+
+msgid "Dashboard"
+msgstr "Рабочий стол"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Legal advice"
+msgstr "Юридическая помощь"
+
+msgid "State"
+msgstr "Государство"
+
+msgid "Legislation"
+msgstr "Законодательство"
+
+msgid "Documents"
+msgstr "Документы"
+
+msgid "Library"
+msgstr "Библиотека"
+
+msgid "Students"
+msgstr "Студентам"
+
+msgid "Entertainment"
+msgstr "Развлечение"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Pravnyk"
+msgstr "Правнык"
+
+msgid "Developed by"
+msgstr "Разработано в"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Log in / Register"
+msgstr "Войти/Регистрация"
+
+msgid "All"
+msgstr "Всё"
+
+msgid "Follow us"
+msgstr "Подписаться"
+
+msgid "About us"
+msgstr "О нас"
+
+msgid "Id"
+msgstr "Идентификация"
+
+msgid "Analytics"
+msgstr "Аналитика"
+
+msgid "Make this news as analytic"
+msgstr "Сделать даную запись как аналитику"
+
+msgid "Creation time"
+msgstr "Время создания"
+
+msgid "Details"
+msgstr "Подробнее"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Sign in to office"
+msgstr "Войти в кабинет"
+
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+msgid "Recover access"
+msgstr "Востановление доступа"
+
+msgid "City"
+msgstr "Город"
+
+msgid "Phone number"
+msgstr "Номер телефона"
+
+msgid "First password"
+msgstr "Пароль"
+
+msgid "Second password"
+msgstr "Введите пароль ещё раз"
+
+msgid "Second name"
+msgstr "Отчество"
+
+msgid "Info"
+msgstr "Информация"
+
+msgid "Next"
+msgstr "Дальше"
+
+msgid "I agree to the terms of use."
+msgstr "Я соглашаюсь с условиями использования"
+
+msgid "Read Terms of Use"
+msgstr "Подробно об условиях использования"
+
+msgid "use more than two characters"
+msgstr "используйте более двух символов"
+
+msgid "password must be at least 6 characters"
+msgstr "Пароль должен иметь более 6-ти символов"
+
+msgid "repeat password"
+msgstr "повторите пароль"
+
+msgid "You must accept the terms of use"
+msgstr "Необходимо согласиться с условиями использования"
+
+msgid "Email already exists"
+msgstr "Даная почта уже зарегистрирована"
+
+msgid "Registration is complete, you can now access your office"
+msgstr "Регистрация завершена, теперь вы можете войти в свой кабинет"
+
+msgid "Email occupied by another user"
+msgstr "Почта занята другим пользоватилем"
+
+msgid "An internal system error, try later"
+msgstr "Произошла внутренняя ошибка системы, попробуйте позже"
+
+msgid "Current password"
+msgstr "Текущий пароль"
+
+msgid "New password"
+msgstr "Новый пароль"
+
+msgid "Repeat new password"
+msgstr "Повторите новый пароль"
+
+msgid "Not change password"
+msgstr "Не менять пароль"
+
+msgid "Office"
+msgstr "Кабинет"
+
+msgid "City and lawyers"
+msgstr "Города и юристы"
+
+msgid "Questions"
+msgstr "Вопросы"
+
+msgid "Open an archive of questions"
+msgstr "Открыть архив вопросов"
+
+msgid "Add city"
+msgstr "Добавить город"
+
+msgid "Add lawyer"
+msgstr "Добавить юриста"
+
+msgid "Ask a question"
+msgstr "Задать вопрос"
+
+msgid "Two short theme"
+msgstr "Слишком короткая тема"
+
+msgid "Two short question"
+msgstr "Слишком короткий вопрос"
+
+msgid "Don't show this record in docs"
+msgstr "Не отображать даную запись в списку документов"
+
+msgid "No records"
+msgstr "Записи отсутствуют"
+
+msgid "Read"
+msgstr "Читать"
+
+msgid "Download"
+msgstr "Загрузить"
+
+msgid "Docs"
+msgstr "Документы"
+
+msgid "Add doc"
+msgstr "Добавить документ"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Document"
+msgstr "Документы"
+
+msgid "Systems"
+msgstr "Системы"
+
+msgid ""
+"After saving this record will be hide, for showing them on client side you "
+"shod un hide them."
+msgstr ""
+"После сохранения запись будет скрытой, соответственно необходимо сделать её "
+"открытой"
+
+msgid "Confirmed"
+msgstr "Подтверждено"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Don't show this record in library"
+msgstr "Спрятать данную запись в списке библиотеки"
+
+msgid "Tags"
+msgstr "Теги"
+
+msgid "News category"
+msgstr "Категории новостей"
+
+msgid "Return to news page"
+msgstr "Вернуться к новостям"
+
+msgid "Url"
+msgstr "Адрес"
+
+msgid "Posted"
+msgstr "Опубликовано"
+
+msgid "State item"
+msgstr "Элемент государства"
+
+msgid "Official name"
+msgstr "Официальное название"
+
+msgid "Structure"
+msgstr "Структура"
+
+msgid "Composition"
+msgstr "Состав"
+
+msgid "Main activity"
+msgstr "Основная деятельность"
+
+msgid "Major powers"
+msgstr "Основные полномочия"
+
+msgid "Subordination direct"
+msgstr "Прямая подчинённость"
+
+msgid "Subordination functional"
+msgstr "Функциональная подчинённость"
+
+msgid "Direct units"
+msgstr "Непосредственные подразделения"
+
+msgid "Indirect units"
+msgstr "Непрямые подразделения"
+
+msgid "Location"
+msgstr "Расположение"
+
+msgid "Contact information"
+msgstr "Контактные данные"
+
+msgid "Officials"
+msgstr "Официальные источники"
+
+msgid "APP regulating activity"
+msgstr "НПА что регулируют деятельность"
+
+msgid "State items"
+msgstr "Элементы государства"
+
+msgid "Some words"
+msgstr "Некоторые фразы"
+
+msgid "Source"
+msgstr "Источник"
+
+msgid "Lawyer registration"
+msgstr "Регистрация для юриста"
+
+msgid "Contact number"
+msgstr "Контактный номер телефону"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Region"
+msgstr "Регион"
+
+msgid "registration is not possible without the approval of the terms of use"
+msgstr "регистрация невозможна без подтверждения условий использования"
+
+msgid "Account type"
+msgstr "Тип пользователя"
+
+msgid "Catalog"
+msgstr "Каталог товаров"
+
+msgid "Image"
+msgstr "Изображения"
+
+msgid "Don't show this record at site"
+msgstr "Не отображать даную запись на сайте"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Buy"
+msgstr "Купить"
+
+msgid "Previous"
+msgstr "Предыдущая"
+
+msgid "Next page"
+msgstr "Следующая страница"
+
+msgid "Your shopping cart"
+msgstr "Ваша корзина"
+
+msgid "To order"
+msgstr "Оформить заказ"
+
+msgid "product"
+msgstr "продукт"
+
+msgid "products"
+msgstr "продукция"
+
+msgid "Shippment options"
+msgstr "Выбор способа оплаты и доставки"
+
+msgid "per unit"
+msgstr "за единицу"
+
+msgid "Count"
+msgstr "Количество"
+
+msgid "Make order"
+msgstr "Подтвердить заказ"
+
+msgid "Your data"
+msgstr "Ваши данные"
+
+msgid "Remove account"
+msgstr "Удалить аккаунт"
+
+msgid "Are you sure you want to delete an account?"
+msgstr "Вы уверенны что хотите удалить свой аккаунт"
+
+msgid "Yes, remove"
+msgstr "Да, удалить"
+
+msgid "Categories of products"
+msgstr "Категории товаров"
+
+msgid "Our partners"
+msgstr "Наши партнёры"
+
+msgid "You are using an"
+msgstr "Вы используете"
+
+msgid "outdated"
+msgstr "застарелый"
+
+msgid "browser. Please"
+msgstr "браузер. Пожалуйста"
+
+msgid "upgrade your browser"
+msgstr "обновите Ваш браузер"
+
+msgid "activate Google Chrome Frame"
+msgstr "активируйте Google Chrome Frame"
+
+msgid "to improve your experience."
+msgstr "чтобы улучшить Вашу работу"
+
+msgid "Social networks"
+msgstr "Социальные сети"
+
+msgid "Fax"
+msgstr "Факс"
+
+msgid "Services"
+msgstr "Услуги"
+
+msgid "To learn more about our services call"
+msgstr "Чтобы узнать подробнее о наших услугах звоните"
+
+msgid "Work"
+msgstr "Работа"
+
+msgid "Employment"
+msgstr "Занятость"
+
+msgid "Job"
+msgstr "Вакансия"
+
+msgid "How to apply?"
+msgstr "Как подать заявку?"
+
+msgid "Please email your CV and a portfolio to:"
+msgstr "Пришлите нам свое резюме на нашу почту"
+
+msgid "You may also be interested in"
+msgstr "Вас может заинтересовать"
+
+msgid "no description available"
+msgstr "описание отсутствует"
+
+msgid "Feedback"
+msgstr "Обратная связь"
+
+msgid "Theme"
+msgstr "Тема"
+
+msgid ""
+"Please enter your email electron and we will send you a new password there "
+"in the future you can change the settings."
+msgstr ""
+"Введите Ваш електронный адрес и мы отправим туда новый пароль, в "
+"дальнейшемего можно будет изменить в настройках"
+
+msgid ""
+"We are always happy to see new people who want to work and grow with us."
+msgstr ""
+"Мы всегда рады видеть новых людей, которые хотят работать и рости вместе "
+"снами"
+
+msgid "Sign in"
+msgstr "Войти"
+
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+msgid "Your Email address"
+msgstr "Ваш электронный адрес"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Your Password"
+msgstr "Ваш Пароль"
+
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+msgid "Registration"
+msgstr "Регистрация"
+
+msgid "Forgot your password"
+msgstr "Забыли Ваш пароль"
+
+msgid "My account"
+msgstr "Мой профиль"
+
+msgid "Orders"
+msgstr "Заказы"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Address"
+msgstr "Адрес"
+
+msgid "Registration date"
+msgstr "Дата регистрации"
+
+msgid "System id"
+msgstr "Системный идентификатор"
+
+msgid "Discount for all products"
+msgstr "Скидка на все товары"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "wait for review"
+msgstr "ожидает рецензии"
+
+msgid "done"
+msgstr "готово"
+
+msgid "rejected"
+msgstr "отказано"
+
+msgid "processed by manager"
+msgstr "обрабатывается"
+
+msgid "Delivery and payment"
+msgstr "Доставка и оплата"
+
+msgid "Discount"
+msgstr "Скидка"
+
+msgid "Total"
+msgstr "Всего"
+
+msgid "Attention"
+msgstr "Внимание"
+
+msgid ""
+"Please enter your email address and we will send you a new password there in "
+"the future you can change the settings."
+msgstr ""
+"Пожалуйста введите Вашу электронную почту и мы отправим Вам новый пароль, "
+"который Вы сможете сменить в настройках."
+
+msgid "Send"
+msgstr "Отправленно"
+
+msgid "Sign up"
+msgstr "Регистрация"
+
+msgid "During the registration error occurred, please try again later"
+msgstr "Во время регистрации возникла ошибка, пожалуйста попробуйте позже"
+
+msgid "You first name"
+msgstr "Ваше имя"
+
+msgid "Passwords do not match"
+msgstr "Пароли не совпадают"
+
+msgid "Confirm password"
+msgstr "Подтвердите пароль"
+
+msgid "Contact phone"
+msgstr "Контактный телефон"
+
+msgid "Create account"
+msgstr "Создать профиль"
+
+msgid "Having troubles?"
+msgstr "У Вас возникли проблемы?"
+
+msgid "Get Help"
+msgstr "Получить помощь"
+
+msgid "Changes have been saved"
+msgstr "Извинения были сохранены"
+
+msgid "General"
+msgstr "В целом"
+
+msgid "Your first name"
+msgstr "Ваше имя"
+
+msgid "Your last name"
+msgstr "Ваша фамилия"
+
+msgid "Contacts"
+msgstr "Контакты"
+
+msgid "Your city"
+msgstr "Ваш город"
+
+msgid "Your address"
+msgstr "Ваш адрес"
+
+msgid "Change password"
+msgstr "Изменить пароль"
+
+msgid "Do not change password"
+msgstr "Не меняйте пароль"
+
+msgid "Current"
+msgstr "Текущий"
+
+msgid "New"
+msgstr "Новый"
+
+msgid "Repeat"
+msgstr "Повторить"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "For account remove please contact our manager."
+msgstr "Для удаления профиля - свяжитесь с нашим менеджером"
+
+msgid ""
+"If you want to remove account and all data, pleace contact our managers, and "
+"they will remove all."
+msgstr ""
+"Если вы хотите удалить профиль и все данные, пожалуйста свяжитесь с "
+"менеджером и он все удалит."
+
+msgid "Save changes"
+msgstr "Сохранить имзминения"
+
+msgid "Shopping Cart"
+msgstr "Корзина"
+
+msgid "Continue shopping"
+msgstr "Продолжить покупки"
+
+msgid "Update"
+msgstr "Обновление"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Qty"
+msgstr "К-тво"
+
+msgid "Price"
+msgstr "Цена"
+
+msgid "Option"
+msgstr "Опции"
+
+msgid "This product is currently unavailable"
+msgstr "Даный продукт временно недоступен"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Digital"
+msgstr "Цифровой"
+
+msgid "Ordinary"
+msgstr "Обыкновенный"
+
+msgid "Not enough products"
+msgstr "Недостаточно продуктов"
+
+msgid "FREE"
+msgstr "БЕСПЛАТНО"
+
+msgid "Payment and delivery"
+msgstr "Оплата и доставка"
+
+msgid "Subtotal"
+msgstr "Сумарно"
+
+msgid "Delivery"
+msgstr "Доставка"
+
+msgid "Proceed to Payment"
+msgstr "Перейти к оплате"
+
+msgid "There is unavailable product in the list"
+msgstr "В списке есть недоступный товар"
+
+msgid "Contact"
+msgstr "Контакты"
+
+msgid "Message send"
+msgstr "Сообщение отправлено"
+
+msgid "Empty fields!"
+msgstr "Пустые поля!"
+
+msgid "YOUR NAME"
+msgstr "ВАШЕ ИМЯ"
+
+msgid "PHONE"
+msgstr "ТЕЛЕФОН"
+
+msgid "YOUR MESSAGE"
+msgstr "ВАШЕ СООБЩЕНИЕ"
+
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+msgid "Red Puzzle Office"
+msgstr "Офис Red Puzzle"
+
+msgid "Manager"
+msgstr "Менеджер"
+
+msgid "e-mail"
+msgstr "Електронная почта"
+
+msgid "Engineer"
+msgstr "Инженер"
+
+msgid "You can also find us"
+msgstr "Вы также можете нас найти"
+
+msgid "at Kyiv city"
+msgstr "в Киеве"
+
+msgid "More information"
+msgstr "Узнать больше"
+
+msgid "For any questions please contact us."
+msgstr "Пожалуйста обращайтесь к нам по любым вопросам."
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "News"
+msgstr "Новости"
+
+msgid "All news"
+msgstr "Все новости"
+
+msgid "Get news to email"
+msgstr "Получать новости по почте"
+
+msgid "As Red Puzzle Customer You can get all news to mail box"
+msgstr "Как Покупатель Red Puzzle Вы можете получать новости по почте"
+
+msgid "read more"
+msgstr "Читать дальше"
+
+msgid "Similar news"
+msgstr "Похожие новости"
+
+msgid "Confirm your password"
+msgstr "Подтвердите Ваш пароль"
+
+msgid "Your phone number"
+msgstr "Ваш номер телефона"
+
+msgid "Your current password"
+msgstr "Ваш текущий пароль"
+
+msgid "Solutions"
+msgstr "Решения"
+
+msgid "Simple license"
+msgstr "Обычная лицензия"
+
+msgid "days"
+msgstr "дни"
+
+msgid "Order now"
+msgstr "Заказать сейчас"
+
+msgid "license"
+msgstr "лицензия"
+
+msgid "Common Questions"
+msgstr "Частые вопрос"
+
+msgid "support"
+msgstr "поддержка"
+
+msgid "Store"
+msgstr "Магазин"
+
+msgid "All products"
+msgstr "Все продукты"
+
+msgid "Sort"
+msgstr "Сортирование"
+
+msgid "Most Popular"
+msgstr "Самые популярные"
+
+msgid "From cheap to expensive"
+msgstr "От дешевых к дорогим"
+
+msgid "From expensive to cheap"
+msgstr "От дорогих к дешёвым"
+
+msgid "Latest"
+msgstr "Последние"
+
+msgid "View"
+msgstr "Просмотр"
+
+msgid "Grid"
+msgstr "Плиткой"
+
+msgid "in stock"
+msgstr "в наличии"
+
+msgid "not available"
+msgstr "недоступен"
+
+msgid "Purchase"
+msgstr "Покупка"
+
+msgid "Product description"
+msgstr "Описание продукта"
+
+msgid "No description available"
+msgstr "Описание - недоступно"
+
+msgid "Important note"
+msgstr "Важно"
+
+msgid ""
+"This product is digital, it's mean that you cant resive it physicaly, only "
+"as digital copy."
+msgstr ""
+"Этот продукт есть цифровым, это значит что Вы не можете его получить "
+"физически, а только как цифровую копию."
+
+msgid "RP License"
+msgstr "RP Лицензия"
+
+msgid "Ukraine"
+msgstr "Українська"
+
+msgid "Russian"
+msgstr "Руский"
+
+msgid "Support"
+msgstr "Поддержка"
+
+msgid "Products & Solutions"
+msgstr "Продукты и решения"
+
+msgid "Products"
+msgstr "Продукты"
+
+msgid "Services & Support"
+msgstr "Услуги и поддержка"
+
+msgid "Social"
+msgstr "социальные сети"
+
+msgid "Get RPC now"
+msgstr "Получите RPC сейчас"
+
+msgid ""
+"RPC is free network system with open source. It can be used like local "
+"network system or global network system for business. The link for "
+"downloading this product will appear soon. Be patient!"
+msgstr ""
+"RPC является сетевой системой с открытым кодом. Она может применяться как "
+"локальная так и глобальная система для бизнеса. В ближайшее время система "
+"будет доступниа для загрузки."
+
+msgid ""
+"Our company provides two products - RPE for commerce and RPC for free use."
+msgstr ""
+"Наша компания предоставляет два продукта - RPE для коммерции и RPC для "
+"свободного пользования."
+
+msgid ""
+"RPE is our commercial product. It includes a variety of services and our "
+"support. We create local or global network systems just using this solution. "
+"Modern technologies help us to create software that allows to get the best "
+"results."
+msgstr ""
+"RPE это наш коммерческий продукт, включающий в себя набор услуг и нашу "
+"поддержку. Мы создаем на его оснвои локальные и глобальные сетевые системы, "
+"используя современные технологии, которые позволяют нам создавать "
+"программное обеспечение, которое дает наилучшие результаты."
+
+msgid "Become a client"
+msgstr "Начать сотрудничество"
+
+msgid ""
+"We provide a simple license, for each client. It includes system integration "
+"in enterprise and it's settings for client needs."
+msgstr ""
+"Для каждого клиента мы предоставляем обычную лицензию RP, что включает в "
+"себя интеграцию системы в предприятии и его настройки под потребности "
+"клиента."
+
+msgid ""
+"After license termination you can purchase a simple license for a 30 days "
+"period. To learn more about our licenses "
+msgstr ""
+"После заверешення срока действия лицензии Вы можете заказать обычную "
+"лицензию сроком в 30 дней"
+
+msgid "visit our shop"
+msgstr "посетите наш магазин"
+
+msgid "RP license AND LTS"
+msgstr "RP лицензия и долговременная поддержка"
+
+msgid ""
+"In production and development, open source as a development model promotes a "
+"universal access via a free license to a product's design or blueprint, and "
+"universal redistribution of that design or blueprint, including subsequent "
+"improvements to it by anyone."
+msgstr ""
+"В ИТ открытые коды представляют собой модель ведения бизнеса, предоставляет "
+"безграничные возможности благодаря свободной лицензии на внесение любых "
+"изменений в архитектуру программных средств, и что самое главное это достпно "
+"всем."
+
+msgid ""
+"If You have any questions about our solutions, just make a call to our "
+"manager and he will help you."
+msgstr ""
+"Если у Вас есть вопросы относительно наших решений, просто позвоните нашему "
+"менеджеру."
+
+msgid "Some information"
+msgstr "Некоторая информация"
+
+msgid "RPE uses for commerce. RPC is free to use for everyone."
+msgstr ""
+"RPE используется для коммерции. RPC является свободным в использовании для "
+"всех."
+
+msgid "Difference between RPE and RPC?"
+msgstr "Какая разница между RPE и RPC?"
+
+msgid "Yes, and all related modules in our store."
+msgstr "Да, и все сопутствующие модуля в нашем магазине."
+
+msgid "Is RPC FREE?"
+msgstr "RPC действительно бесплатный?"
+
+msgid ""
+"The MIT License is a free software license originating at the Massachusetts "
+"Institute of Technology (MIT). It is a permissive free software license, "
+"meaning that it permits reuse within proprietary software provided all "
+"copies of the licensed software include a copy of the MIT License terms and "
+"the copyright notice. Such proprietary software retains its proprietary "
+"nature even though it incorporates software under the MIT License. The "
+"license is also GPL-compatible, meaning that the GPL permits combination and "
+"redistribution with software that uses the MIT License."
+msgstr ""
+"Лицензия MIT (англ. MIT License) — лицензия свободного программного "
+"обеспечения разработанная Массачусетским технологическим институтом (МТИ). "
+"Лицензия MIT является одной из самых ранних свободных лицензий, так как она "
+"относительно проста и иллюстрирует некоторые из основных принципов "
+"свободного лицензирования. Она является разрешительной лицензией, то есть "
+"позволяет программистам использовать лицензируемый код в закрытом ПО при "
+"условии, что текст лицензии предоставляется вместе с этим ПО. Лицензия "
+"является GPL-совместимой, то есть разрешает программистам комбинировать и "
+"распространять GPL-продукты с программным обеспечением под лицензией MIT."
+
+msgid "MIT License?"
+msgstr "MIT лицензия?"
+
+msgid "Open source?"
+msgstr "Открытый код?"
+
+msgid ""
+"Red Puzzle Community - software product, it allows you to use Red Puzzle "
+"framework for free. Also RPC is our open community for developers."
+msgstr ""
+"Red Puzzle Сообщество - программный продукт, позволяющий использовать RP "
+"платформу бесплатно. Также RPC это наше открытое сообщество для "
+"разработчиков."
+
+msgid "What is RPC?"
+msgstr "Что такое RPC?"
+
+msgid "VISIT STORE"
+msgstr "ПОСЕТИТЕ МАГАЗИН"
+
+msgid "Check out our solutions!"
+msgstr "Взгляните на наши предложения!"
+
+msgid "Have a Question?"
+msgstr "Есть вопросы?"
+
+msgid "Use our support system, if you have any questions."
+msgstr "Используйте нашу систему поддержки если у Вас возникли вопросы."
+
+msgid "Get support"
+msgstr "получить поддержку"
+
+msgid ""
+"The most important activity of our company is solution building, because RPE "
+"uses for business."
+msgstr ""
+"Основная деятельность нашего сообщества направлена ​​на построение решений для "
+"сетевых систем."
+
+msgid "Use open source"
+msgstr "Использование открытых кодов"
+
+msgid "Become a member"
+msgstr "Начать сотрудничество"
+
+msgid ""
+"RPC includes many modules to build a network system. Today it has more than "
+"a dozen modules that allow you to build e-commerce system, enterprise "
+"resource planning, information and decision support system. Anyone can use "
+"RPC in their aims, for example to build an online store."
+msgstr ""
+"RPC включает в себя множество модулей для построения сетевых систем. Сегодня "
+"это не просто система с набором модулей для расширения функционала это в "
+"первую очередь: e-commerce, планирования ресурсов предприятия, "
+"информационные системы и системы поддержки принятия решений. Каждый может "
+"использовать RPC в собственных целях, как пример для создания интернет "
+"магазина."
+
+msgid ""
+"We give RP licenses for all our products and distribute it only as part of "
+"RPE. Each customer can buy"
+msgstr ""
+"Мы предоставляем RP лицензию для всех наших клиентов и распространяем ее "
+"только как часть RPE. Каждый клиент может приобрести"
+
+msgid "for special extended services."
+msgstr "для расширенной долговременной поддержки."
+
+msgid "What is RPE?"
+msgstr "Что такое RPE?"
+
+msgid ""
+"Red Puzzle Enterprise is commercial product that we provide for our "
+"customers as solution for creating network systems."
+msgstr ""
+"Red Puzzle для предприятие (RPE) - коммерческий продукт, который "
+"предоставляет наша компания всем клиентам как решение для создания сетевых "
+"систем."
+
+msgid "Simple support for free?"
+msgstr "Обычная поддержка является бесплатной?"
+
+msgid "Yes, but only for RPE owners."
+msgstr "Да, но только для наших клиентов."
+
+msgid "For how long can I get support for my RPE system?"
+msgstr "Как долго можно получать поддержку RPE систем?"
+
+msgid "As long as we work."
+msgstr "Так долго как мы работаем."
+
+msgid "Why RPC has so match modules for free?"
+msgstr "Почему RPC имеет так много бесплатных модулей?"
+
+msgid "Creating sandbox for open software developer is our business strategy."
+msgstr ""
+"Потому что мы создаем песочницу для разработчиков и это является частью "
+"нашей бизнес стратегии."
+
+msgid "How to start work with Red Puzzle?"
+msgstr "Как начать работу с Red Puzzle?"
+
+msgid "Just make a call to our managers or sign up into our system."
+msgstr "Просто позвоните нашим менеджерам или зарегистрируйтесь на сайте."
+
+msgid "At this moment support is available only for our customers."
+msgstr "На данный момент поддержка доступна только для наших клиентов."
+
+msgid "Responsive design"
+msgstr "Дизайн для всех устройств (Responsive design)"
+
+msgid "Search text"
+msgstr "Текст для поиска"
+
+msgid "No search result"
+msgstr "Нет результатов поиска"
+
+msgid "List"
+msgstr "Списком"
+
+msgid "Your business solution"
+msgstr "Ваше бизнес решения"
+
+msgid ""
+"Join Red Puzzle and we will help you to create your own system, no matter "
+"how complicate it will be. We are always ready to make your business easier "
+"just using RP enterprise solution. So, welcome to big Red Puzzle family! "
+"Here you can find the newest and the most functional decisions of making IT-"
+"systems."
+msgstr ""
+"Присоединяйтесь к Red Puzzle и мы поможем Вам создать собственную систему, и "
+"не важно насколько сложной она будет. Мы всегда готовы облегчить Ваш бизнес "
+"просто используя решение RP для предприятий. Поэтому, добро пожаловать к "
+"большой семье Red Puzzle! Здесь Вы найдете наиболее новые и наиболее "
+"продуктивные ИТ-решения."
+
+msgid ""
+"Our company creates local and global network systems. That systems calls - "
+"Red Puzzle Enterprise. It consist of 4 basical parts. You can see them below."
+msgstr ""
+"Наша компания создает локальные и глобальные сетевые системы. Эти системы "
+"назвиаються - Red Puzzle для предприятий, и состоят из четырех базовых "
+"частей. Информация по данному продукту ниже."
+
+msgid ""
+"We create all kind of network systems for our customers with free 90's days "
+"support."
+msgstr ""
+"Для наших клиентов мы создаем все виды сетевых систем с бесплатной "
+"поддержкой сроком в 90 дней."
+
+msgid "learn more"
+msgstr "подробнее"
+
+msgid "Become a customer - get 90 days free support or full Support (LTS)"
+msgstr ""
+"Начните сотрудничать с нами, и получайте 90 дней бесплатной поддержки или "
+"полную поддержку (LTS)"
+
+msgid "We create everything for your business needs"
+msgstr "Мы создаем все для Ваших бизнес-потребностей"
+
+msgid "Use Long Term Support"
+msgstr "Используйте долговременную поддержку"
+
+msgid "empty"
+msgstr "пусто"
+
+msgid "Cart"
+msgstr "Корзина"
+
+msgid "_days"
+msgstr "дней"
+
+msgid "Statistic"
+msgstr "Статистика"
+
+msgid "No data available"
+msgstr "Данные отсутствуют"
+
+msgid "Reports"
+msgstr "Отчеты"
+
+msgid "Filters"
+msgstr "Фильтры"
+
+msgid "Completed"
+msgstr "Завершено"
+
+msgid "Rejected"
+msgstr "Отклонено"
+
+msgid "Waiting for payment"
+msgstr "Ожидает оплаты"
+
+msgid "Client"
+msgstr "Клиент"
+
+msgid "Order date"
+msgstr "Дата заказа"
+
+msgid "Recent changes"
+msgstr "Последние изменения"
+
+msgid "Process filters"
+msgstr "Применить фильтры"
+
+msgid "Disable"
+msgstr "Сбросить"
+
+msgid "Records"
+msgstr "Записей"
+
+msgid "Report"
+msgstr "Отчет"
+
+msgid "Quantity"
+msgstr "Количество"
+
+msgid "Views"
+msgstr "Просмотров"
+
+msgid "Last update"
+msgstr "Последнее обновление"
+
+msgid "Add catalog"
+msgstr "Добавить каталог"
+
+msgid "Leave empty to create new catalog"
+msgstr "Оставить пустым для создания нового каталога"
+
+msgid "Upload another image"
+msgstr "Загрузить другую картинку"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Product"
+msgstr "Продукт"
+
+msgid "Clients"
+msgstr "Клиенты"
+
+msgid "Finances"
+msgstr "Финансы"
+
+msgid "Finance"
+msgstr "Финансы"
+
+msgid "Income"
+msgstr "Доход"
+
+msgid "Sum"
+msgstr "Сумма"
+
+msgid "Last changes"
+msgstr "Последние изменения"
+
+msgid "Responsible"
+msgstr "Ответственное лицо"
+
+msgid "Production"
+msgstr "Производство"
+
+msgid "Employees"
+msgstr "Сотрудники"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Security Credentials"
+msgstr "Учетные Данные Безопасности"
+
+msgid "Documentation"
+msgstr "Документация"
+
+msgid "System"
+msgstr "Система"
+
+msgid "Back to Red Puzzles"
+msgstr "Назад к Red Puzzles"
+
+msgid "Monitoring"
+msgstr "Мониторинг"
+
+msgid "Terms of Use"
+msgstr "Условия Эксплуатации"
+
+msgid "Privacy Policy"
+msgstr "Политика Конфиденциальности"
+
+msgid "Order status"
+msgstr "Статус заказа"
+
+msgid "Ordered quantity"
+msgstr "Заказанное количество"
+
+msgid "Available quantity"
+msgstr "Доступное количество"
+
+msgid "Different products"
+msgstr "Разные товары"
+
+msgid "Totally products"
+msgstr "Всего товаров"
+
+msgid "Customer"
+msgstr "Покупатель"
+
+msgid "Order"
+msgstr "Заказ"
+
+msgid "Select catalog"
+msgstr "Выберите каталог"
+
+msgid "You must specify a catalog to which belongs to"
+msgstr "Вы должны указать каталог к которому принадлежит"
+
+msgid "Available items"
+msgstr "Доступные товары"
+
+msgid ""
+"This url is using for SEO, leave this field empty for auto url generate."
+msgstr ""
+"Этот URL-адрес используется для SEO, оставьте это поле пустым для "
+"автогенерации URL"
+
+msgid "New product"
+msgstr "Новый продукт"
+
+msgid "Managers"
+msgstr "Менеждеры"
+
+msgid "Reject"
+msgstr "Отменить"
+
+msgid "Select an account to allocate manager"
+msgstr "Выберите учетную запись, чтобы выделить менеджера"
+
+msgid "Account"
+msgstr "Учетная запись"
+
+msgid "Value is required and can't be empty"
+msgstr "Значение является обязательным и не может быть пустым"
+
+msgid "Costs"
+msgstr "Расходы"
+
+msgid "Profit"
+msgstr "Прибыль"
+
+msgid "Accounts"
+msgstr "Учетные записи"
+
+msgid "Salary"
+msgstr "Зарплата"
+
+msgid "Back to Red Puzzles site"
+msgstr "Вернуться к сайту Red Puzzles"
+
+msgid "Show system components"
+msgstr "Показать системные компоненты"

@@ -1,0 +1,47 @@
+<? $this->headTitle(
+    $this->translate('Delete') . ' | ' . 
+    $this->translate('Employees') . ' | ' . 
+    $this->translate('HR')) ?>
+
+<div id="page-wrapper">
+    <div class="row">
+        <legend>
+            <span class="glyphicon glyphicon-user"></span>
+            <a href="<?= $this->url('backHR') ?>">
+                <?= $this->translate('HR') ?>
+            </a>
+            /
+            <a href="<?= $this->url($this->url) ?>">
+                <?= $this->translate('Employees') ?>
+            </a>
+            /
+            <a href="">
+                <?= $this->translate('Delete') ?>
+            </a>
+        </legend>
+    </div>
+
+    <div class="row">
+        <p>
+            <?= $this->translate('Remove') ?>
+            <strong>
+                "<?= $this->account->first_name ?>
+                <?= $this->account->last_name ?>"
+            </strong>
+            <?= $this->translate('record') ?>?
+        </p>
+        <form action="<?= $this->url(
+                    $this->url,
+                    [
+                        'action' => 'delete',
+                        'id' => $this->id,
+                    ]) ?>" method="post">
+            <div>
+                <input type="submit" name="del" class="btn btn-danger" value="<?= $this->translate('Yes') ?>">
+                <a class="btn btn-default" href="<?= $this->url($this->url) ?>">
+                    <?= $this->translate('No') ?>
+                </a>
+            </div>
+    </form>
+    </div>
+</div>

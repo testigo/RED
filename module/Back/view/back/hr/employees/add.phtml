@@ -1,0 +1,230 @@
+<? $this->headTitle(
+    $this->translate('Add') . ' | ' .
+    $this->translate('Employees') . ' | ' .
+    $this->translate('HR')) ?>
+
+<?
+$this->form->prepare();
+$this->form->setAttribute('class', 'form-horizontal');
+?>
+
+<div id="page-wrapper">
+    <div class="row">
+        <legend>
+            <span class="glyphicon glyphicon-user"></span>
+            <a href="<?= $this->translate('backHR') ?>">
+                <?= $this->translate('HR') ?>
+            </a>
+            /
+            <a href="<?= $this->url($this->url) ?>">
+                <?= $this->translate('Employees') ?>
+            </a>
+            /
+            <a href="">
+                <?= $this->translate('Add') ?>
+            </a>
+        </legend>
+    </div>
+    <div class="row">
+        <?= $this->form()->openTag($this->form) ?>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <a class="btn btn-default" href="<?= $this->url($this->url) ?>">
+                        <?= $this->translate('Back') ?>
+                    </a>
+                    <?= $this->formInput(
+                        $this->form->get('submit')->setAttribute('class', 'btn btn-success')
+                            ->setValue($this->translate('Save'))) ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('First name') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formInput($this->form->get('first_name')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('first_name')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('first_name')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('Last name') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formInput($this->form->get('last_name')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('last_name')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('last_name')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    <?= $this->translate('Second name') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formInput($this->form->get('second_name')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('second_name')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('second_name')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('City') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formInput($this->form->get('city')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('city')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('city')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('Address') ?>:
+                </label>
+                <div class="col-md-10">
+                    <?= $this->formInput($this->form->get('address')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('address')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('address')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('Email') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formInput($this->form->get('email')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('email')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('email')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('Phone number') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formInput($this->form->get('phone_number')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('phone_number')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('phone_number')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    <?= $this->translate('Position') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formSelect($this->form->get('id_position')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('id_position')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('id_position')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    <?= $this->translate('Department') ?>:
+                </label>
+                <div class="col-md-4">
+                    <?= $this->formSelect($this->form->get('id_departments')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('id_departments')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('id_departments')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('Password') ?>:
+                </label>
+                <div class="col-md-3">
+                    <?= $this->formInput($this->form->get('password')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('password')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('password')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    * <?= $this->translate('Repeat password') ?>:
+                </label>
+                <div class="col-md-3">
+                    <?= $this->formInput($this->form->get('password_check')->setAttribute('class', 'form-control input-md')) ?>
+                    <? if ($this->form->get('password_check')->getMessages()) : ?>
+                        <span class="form-error">
+                            <? foreach ($this->form->get('password_check')->getMessages() as $message) : ?>
+                                <?= $message ?>
+                                <br>
+                            <? endforeach ?>
+                        </span>
+                    <? endif ?>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label">
+                    <?= $this->translate('Creation time') ?>:
+                </label>
+                <div class="col-md-10">
+                    <span class="form-error control-label pull-left">
+                        <?= date('Y-m-d H:i:s') ?>
+                    </span>
+                </div>
+            </div>
+        <?= $this->form()->closeTag() ?>
+    </div>
+</div>

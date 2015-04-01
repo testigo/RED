@@ -1,0 +1,117 @@
+<? $this->headTitle(
+    $this->translate('View') . ' | ' .
+    $this->translate('Employees') . ' | ' . 
+    $this->translate('HR')) ?>
+
+<div class="row">
+    <legend>
+        <span class="glyphicon glyphicon-user"></span>
+        <a href="<?= $this->url('backHR') ?>">
+            <?= $this->translate('HR') ?>
+        </a>
+        /
+        <a href="<?= $this->url($this->url) ?>">
+            <?= $this->translate('Employees') ?>
+        </a>
+        /
+        <a href="">
+            <?= $this->account->first_name ?>
+            <?= $this->account->last_name ?>
+        </a>
+    </legend>
+</div>
+<div class="row">
+    <a class="btn btn-default" href="<?= $this->url($this->url) ?>">
+        <?= $this->translate('Back') ?>
+    </a>
+    <a class="btn btn-primary" href="<?= $this->url(
+            $this->url,
+            [
+                'action' => 'edit',
+                'id' => $this->id,
+            ]) ?>">
+       <?= $this->translate('Edit') ?>
+    </a>
+    <br>
+    <br>
+    <table class="table">
+        <tr>
+            <td class="col-md-2">
+                <?= $this->translate('First name') ?>:
+            </td>
+            <td>
+                <?= $this->account->first_name ?>
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                <?= $this->translate('Last name') ?>:
+            </td>
+            <td>
+                <?= $this->account->last_name ?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <?= $this->translate('Second name') ?>:
+            </td>
+            <td>
+               <?= $this->account->second_name ?>
+           </td>
+       </tr>
+       <tr>
+            <td>
+                <?= $this->translate('Phone') ?>:
+            </td>
+            <td>
+                <?= $this->account->phone_number ?>
+            </td>
+       </tr>
+       <tr>
+            <td>
+                <?= $this->translate('Email') ?>:
+            </td>
+            <td>
+                <?= $this->user->email ?>
+            </td>
+       </tr>
+       <tr>
+            <td>
+                <?= $this->translate('City') ?>
+            </td>
+            <td>
+                <?= $this->account->city ?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <?= $this->translate('Address') ?>
+            </td>
+            <td>
+                <?= $this->account->address ?>
+            </td>
+        </tr>
+        <? if(isset($this->position->title)) : ?>
+        <tr>
+            <td>
+                <?= $this->translate('Position') ?>
+            </td>
+            <td>
+                <?= $this->position->title ?>
+            </td>
+        </tr>
+        <? 
+            endif;
+            if(isset($this->departments->title)) : 
+        ?>
+        <tr>
+            <td>
+                <?= $this->translate('Departmens') ?>
+            </td>
+            <td>
+                <?= $this->departments->title ?>
+            </td>
+        </tr>
+        <? endif; ?>
+    </table>
+</div>

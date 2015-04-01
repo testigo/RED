@@ -1,0 +1,62 @@
+<? if ($this->pageCount) : ?>
+    <ul class="pagination">
+        <li <?= (!isset($previous)) ? 'class="disabled"' : '' ?>>
+            <a href="<?= $this->url(
+                    'backStoreCatalogProduct', 
+                    [
+                        'page' => isset($first) ? $first : null,
+                        'order_by' => $this->order_by ? $this->order_by : null,   
+                        'order' => $this->order ? $this->order : null,
+                    ]) ?>">
+                &laquo;
+            </a>
+        </li>
+        <li <?= (!isset($previous)) ? 'class="disabled"' : '' ?>>
+            <a href="<?= $this->url(
+                    'backStoreCatalogProduct', 
+                    [
+                        'page' => isset($previous) ? $previous : null,
+                        'order_by' => $this->order_by ? $this->order_by : null, 
+                        'order' => $this->order ? $this->order : null,
+                    ]) ?>">
+                &lsaquo;
+            </a>
+        </li>
+        <? foreach ($this->pagesInRange as $page) : ?>
+            <li <?= ($page == $this->current) ? 'class="active"' : '' ?>>
+                <a href="<?= $this->url(
+                        'backStoreCatalogProduct', 
+                        [
+                            'page' => isset($page) ? $page : null,
+                            'order_by' => $this->order_by ? $this->order_by : null, 
+                            'order' => $this->order ? $this->order : null,
+                        ]) ?>">
+                    <?= $page ?>
+                </a>
+            </li>
+        <? endforeach ?>
+
+        <li <?= (!isset($next)) ? 'class="disabled"' : '' ?>>
+            <a href="<?= $this->url(
+                    'backStoreCatalogProduct', 
+                    [
+                        'page' => isset($next) ? $next : null,
+                        'order_by' => $this->order_by ? $this->order_by : null, 
+                        'order' => $this->order ? $this->order : null,
+                    ]) ?>">
+                &rsaquo;
+            </a>
+        </li>
+        <li <?= (!isset($next)) ? 'class="disabled"' : '' ?>>
+            <a href="<?= $this->url(
+                    'backStoreCatalogProduct', 
+                    [
+                        'page' => isset($last) ? $last : null,
+                        'order_by' => $this->order_by ? $this->order_by : null, 
+                        'order' => $this->order ? $this->order : null,
+                    ]) ?>">
+                &raquo;
+            </a>
+        </li>
+    </ul>
+<? endif ?>
